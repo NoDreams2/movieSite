@@ -8,11 +8,12 @@ const API_URL_MOVIE_DETAILS =
 
 let currentPage = 1;
 let isSearching = false; // Отслеживаем, активен ли поиск
+let totalPages = "35"
 
 function updateMovies() {
   const apiUrl = `${API_URL_POPULAR}${currentPage}`;
   getMovies(apiUrl);
-  document.getElementById("currentPage").innerHTML = currentPage;
+  document.getElementById("currentPage").innerHTML = `${currentPage} / ${totalPages}`;
 
   if (isSearching) {
     document.querySelector(".cards__pagination").style.display = "none";
