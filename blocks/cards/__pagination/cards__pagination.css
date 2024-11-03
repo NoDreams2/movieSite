@@ -1,0 +1,7 @@
+.cards__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto 15px auto;
+    gap: 15px;
+}
