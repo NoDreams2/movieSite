@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieApp</title>
+    <link rel="stylesheet" href="./bundle.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="header__logo">MovieApp</a>
+        <form class="header__forma" name="forma">
+          <input type="text" class="header__search" placeholder="Поиск" />
+        </form>
+      </div>
+    </header>
+    <section class="cards">
+      <div class="cards__container">
+        <div class="cards__movies" id="cards-movies">
+          <div class="cards__movie">
+            <div class="cards__cover-inner">
+              <img
+                src="../images/test.jpg"
+                alt="test"
+                class="img-responsive cards__movie-cover"
+              />
+              <div class="cards__cover_darkened"></div>
+              <span class="cards__average cards__average_green">10</span>
+            </div>
+            <div class="cards__info">
+              <h2 class="cards__title">Никита</h2>
+              <span class="cards__category">НиКиТа</span>
+            </div>
+          </div>
+        </div>
+        <div class="cards__pagination">
+          <button class="cards__button cards__button-prev">Назад</button>
+          <spsn class="cards__current" id="currentPage">1</spsn>
+          <button class="cards__button cards__button-next">Вперед</button>
+        </div>
+        <div class="cards__modal">
+          <div class="cards__movie-card">
+            <img
+              src="../images/test.jpg"
+              alt="test"
+              class="img-responsive cards__movie-backdrop"
+            />
+            <h2 class="cards__movie-titles">
+              <span class="cards__movie-name">Никита</span>
+              <span class="cards__movie-release-year">2024</span>
+            </h2>
+            <ul class="cards__movie-info">
+              <li class="cards__item cards__movie-genre">Боевик, Комедия</li>
+              <li class="cards__item cards__movie-runtime">123 мин</li>
+              <li class="cards__item">
+                <span class="cards__movie-site"
+                  >Сайт:
+                  <a href="#!" class="cards__movie-site-link">хттпс...</a></span
+                >
+              </li>
+              <li class="cards__item cards__movie-overview">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                tempora cumque illo veritatis animi sit similique ullam eum
+                officiis ipsam, dicta alias earum nisi nulla quasi non explicabo
+                facilis ab.
+              </li>
+            </ul>
+            <button class="cards__button-close" type="button">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="./main.js"></script>
+</html>

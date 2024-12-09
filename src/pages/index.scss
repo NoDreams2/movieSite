@@ -1,0 +1,10 @@
+/* global style */
+@import '../common/fonts/fonts.scss';
+@import '../common/variables/variables.scss';
+@import '../common/global/normalize/normalize.scss';
+
+/* general styles */
+@import '../common/header/header.scss';
+
+/* blocks */
+@import '../blocks/cards/cards.scss'

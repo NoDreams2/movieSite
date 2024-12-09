@@ -1,0 +1,8 @@
+.cards__button-next.active {
+    color: rgba(255, 235, 145, 1);
+    transition: color 0.25s ease;
+    cursor: pointer;
+    &:hover {
+        color: rgba(255, 216, 14, 1);
+    }
+}
